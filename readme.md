@@ -3,7 +3,7 @@
 
 2. Login to PostgreSQL (localhost:5050) database using pgAdmin. Check credential file. Add source and destination database in pgAdmin.
 
-3. Execute student-source query in source database. Check records inserted in source.The script will create student table and insert some records.
+3. Execute student-source query in source database.The script will create student table and insert some records. Check records inserted in source db.
 
 4. Execute student-destination query in destination database. This script will create student table include insert timestamp column
 
