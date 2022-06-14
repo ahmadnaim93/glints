@@ -5,8 +5,8 @@ dag_params = {
     'dag_id': 'postgres_student_migration'
 }
 with DAG(**dag_params) as dag:
-    src = PostgresHook(postgres_conn_id='Source')
-    dest = PostgresHook(postgres_conn_id='Destination')
+    src = PostgresHook(postgres_conn_id='source')
+    dest = PostgresHook(postgres_conn_id='destination')
     src_conn = src.get_conn()
     cursor = src_conn.cursor()
     dest_conn = dest.get_conn()
