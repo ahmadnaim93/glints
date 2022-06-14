@@ -1,0 +1,3 @@
+logs/dag_processor_manager/dag_processor_manager.log
+logs/scheduler/latest
+logs/scheduler/2022-06-14/postgres_student.py.log
