@@ -1,5 +1,8 @@
 1. Run in terminal
-    $ docker-compose up
+```fish
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+docker-compose up
+```
 
 2. Login to PostgreSQL (localhost:5050) database using pgAdmin. Check credential file. Add source and destination database in pgAdmin.
 
