@@ -97,7 +97,6 @@ services:
       POSTGRES_USER: source
       POSTGRES_PASSWORD: source
       POSTGRES_DB: source
-      PGDATA: /var/lib/postgres/data
     ports:
       - 2222:5432
     volumes:
@@ -114,7 +113,6 @@ services:
       POSTGRES_USER: destination
       POSTGRES_PASSWORD: destination
       POSTGRES_DB: destination
-      PGDATA: /var/lib/postgres/data
     ports:
       - 3333:5432
     volumes:
