@@ -21,3 +21,10 @@ docker-compose up
 9. Insert more records in source db using student.sql file.
 
 10. New inserted record will appear in destination db.
+
+SELECT
+    LEVEL AS interval_id,
+    TO_TIMESTAMP('2023-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS') + (LEVEL - 1) * INTERVAL '3' HOUR AS start_time,
+    TO_TIMESTAMP('2023-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS') + LEVEL * INTERVAL '3' HOUR AS end_time
+FROM dual
+CONNECT BY LEVEL <= 8;
